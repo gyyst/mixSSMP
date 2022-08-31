@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://124.221.192.10:3306/ssm_db
-    username: root0
+    url: jdbc:mysql://127.0.0.1:3306/ssm_db
+    username: root
     password: '123456'
     type: com.alibaba.druid.pool.DruidDataSource
 mybatis-plus:
