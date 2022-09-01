@@ -1,0 +1,2 @@
+# mixSSMP
+基于SpringBoot2实现SSMP整合的简易图书CRUD
