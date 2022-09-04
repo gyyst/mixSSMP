@@ -5,9 +5,11 @@ import lombok.Data;
 import lombok.ToString;
 import org.springframework.stereotype.Repository;
 
+import java.io.Serializable;
+
 @Data
 @TableName("tbl_book")
-public class Book {
+public class Book implements Serializable {
     private Integer id;
     private String type;
     private String name;

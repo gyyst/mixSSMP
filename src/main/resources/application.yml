@@ -5,7 +5,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/ssm_db
-    username: root0
+    username: root
     password: '123456'
     type: com.alibaba.druid.pool.DruidDataSource
   devtools:
@@ -31,3 +31,21 @@ logging:
     rollingpolicy:
       max-file-size: 4KB
       file-name-pattern: server-%d{yyyy-MM-dd}-%i.log
+
+jetcache:
+  statIntervalMinutes: 1
+  remote:
+    default:
+      keyConvertor: fastjson
+      valueEncode: java
+      valueDecode: java
+      type: redis
+      host: 124.221.192.10
+      port: 6379
+      password: 123456
+      poolConfig:
+        maxTotal: 50
+  local:
+    default:
+      type: linkedhashmap
+      keyConvertor: fastjson
