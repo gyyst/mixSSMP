@@ -40,9 +40,8 @@ jetcache:
       valueEncode: java
       valueDecode: java
       type: redis
-      host: 124.221.192.10
+      host: 127.0.0.1
       port: 6379
-      password: 123456
       poolConfig:
         maxTotal: 50
   local:
